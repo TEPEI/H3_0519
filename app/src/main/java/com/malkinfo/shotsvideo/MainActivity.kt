@@ -1,14 +1,13 @@
 package com.malkinfo.shotsvideo
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.firebase.ui.database.FirebaseRecyclerOptions
-import com.google.firebase.FirebaseApp
-import com.google.firebase.auth.FirebaseAuthException
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
 import com.malkinfo.shotsvideo.adapter.VideoAdapter
 import com.malkinfo.shotsvideo.model.VideoModel
 
@@ -28,7 +27,10 @@ class MainActivity : AppCompatActivity() {
         viewPager2 = findViewById(R.id.vpager)
 
         /**set database*/
-        val mDataBase = Firebase.database.getReference("videos")
+        // Create a storage reference from our app
+        //val storage = FirebaseStorage.getInstance()
+        //var storageRef = storage.reference
+        val mDataBase = Firebase.database.getReference("video")
 
         val options = FirebaseRecyclerOptions.Builder<VideoModel>()
             .setQuery(mDataBase,VideoModel::class.java)
@@ -51,3 +53,4 @@ class MainActivity : AppCompatActivity() {
    
     
 }
+
