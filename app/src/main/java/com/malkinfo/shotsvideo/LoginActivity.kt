@@ -9,7 +9,11 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+       val editText = findViewById<editText>(R.id.editTextTextPersonName)
+
     }
+
 
     /** Called when the user taps the Send button */
     fun sendMessage(view: View) {
