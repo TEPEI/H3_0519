@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         //initializeResource()
 
         val bnv = findViewById<BottomNavigationView>(R.id.bottomBar)
-/*
+
         bnv.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.action_random -> {
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             }
             false
         })
-*/
+
         /**set fullscreen*/
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
         WindowManager.LayoutParams.FLAG_FULLSCREEN)
