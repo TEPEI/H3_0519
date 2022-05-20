@@ -22,28 +22,32 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        initializeResource()
+        //initializeResource()
 
         val bnv = findViewById<BottomNavigationView>(R.id.bottomBar)
-
+/*
         bnv.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.item1 -> {
-                    setFragment()
+                R.id.action_random -> {
+                    //setFragment()
                     return@OnNavigationItemSelectedListener true
                 }
-                R.id.item2 -> {
-                    setFragment()
+                R.id.action_themeSep -> {
+                    //setFragment()
                     return@OnNavigationItemSelectedListener true
                 }
-                R.id.item3 -> {
-                    setFragment()
+                R.id.action_themeUp -> {
+                    //setFragment()
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.action_videoUp -> {
+                    //setFragment()
                     return@OnNavigationItemSelectedListener true
                 }
             }
             false
         })
-
+*/
         /**set fullscreen*/
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
         WindowManager.LayoutParams.FLAG_FULLSCREEN)
@@ -82,6 +86,8 @@ class MainActivity : AppCompatActivity() {
         adapter.stopListening()
     }
 
+
+    /*
     fun initializeResource(){
         //BottomNavigationViewを設定
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomBar)
@@ -95,6 +101,6 @@ class MainActivity : AppCompatActivity() {
 
     }
    
-    
+    */
 }
 
