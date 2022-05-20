@@ -48,10 +48,10 @@ class MainActivity : AppCompatActivity() {
         adapter = VideoAdapter(options)
         viewPager2.adapter = adapter
 
-        val returnButton: Button = findViewById<Button>(R.id.return_button)
+        //val returnButton: Button = findViewById<Button>(R.id.return_button)
         // lambda式
         // lambda式
-        returnButton.setOnClickListener { v -> finish() }
+        //returnButton.setOnClickListener { v -> finish() }
 
     }
 
