@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ShotsVideo</string>
+    <string name="eddit_message">enter a message</string>
+    <string name="button_send">send</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
