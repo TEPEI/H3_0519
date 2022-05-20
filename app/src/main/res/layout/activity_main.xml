@@ -9,15 +9,15 @@
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vpager"
-        android:layout_width="412dp"
-        android:layout_height="733dp"
+        android:layout_width="414dp"
+        android:layout_height="625dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="231dp">
+        app:layout_constraintVertical_bias="0.0">
 
     </androidx.viewpager2.widget.ViewPager2>
 
