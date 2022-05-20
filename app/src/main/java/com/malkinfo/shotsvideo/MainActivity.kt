@@ -13,6 +13,7 @@ import com.malkinfo.shotsvideo.model.VideoModel
 import com.malkinfo.shotsvideo.R
 import android.content.Intent
 import android.view.View
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.malkinfo.shotsvideo.MainActivity
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +24,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        initializeResource()
+
         /**set fullscreen*/
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
         WindowManager.LayoutParams.FLAG_FULLSCREEN)
@@ -59,6 +63,16 @@ class MainActivity : AppCompatActivity() {
     override fun onStop() {
         super.onStop()
         adapter.stopListening()
+    }
+
+    fun initializeResource(){
+        //BottomNavigationViewを設定
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomBar)
+        bottomNavigationView.setOnNavigationItemSelectedListener(this)
+        bottomNavigationView.itemIconSize = 70
+        bottomNavigationView.scaleX = 1.2f
+        bottomNavigationView.scaleY = 1.2f
+
     }
    
     
