@@ -1,8 +1,8 @@
 package com.malkinfo.shotsvideo
 
-import android.R
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.firebase.ui.database.FirebaseRecyclerOptions
@@ -10,7 +10,10 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.malkinfo.shotsvideo.adapter.VideoAdapter
 import com.malkinfo.shotsvideo.model.VideoModel
-
+import com.malkinfo.shotsvideo.R
+import android.content.Intent
+import android.view.View
+import com.malkinfo.shotsvideo.MainActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         adapter = VideoAdapter(options)
         viewPager2.adapter = adapter
 
-        val returnButton: Button = findViewById(R.id.return_button)
+        val returnButton: Button = findViewById<Button>(R.id.return_button)
         // lambda式
         // lambda式
         returnButton.setOnClickListener { v -> finish() }
