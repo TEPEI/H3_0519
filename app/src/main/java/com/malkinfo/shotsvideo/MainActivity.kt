@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         // Create a storage reference from our app
         //val storage = FirebaseStorage.getInstance()
         //var storageRef = storage.reference
+
         val mDataBase = Firebase.database.getReference("video")
 
         val options = FirebaseRecyclerOptions.Builder<VideoModel>()
