@@ -28,33 +28,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //initializeResource()
-
-        /*val bnv = findViewById<BottomNavigationView>(R.id.bottomBar)
-
-        bnv.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.action_random -> {
-                    //setFragment()
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.action_themeSep -> {
-                    //setFragment()
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.action_themeUp -> {
-                    //setFragment()
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.action_videoUp -> {
-                    //setFragment()
-                    return@OnNavigationItemSelectedListener true
-                }
-            }
-            false
-        })
-
-         */
 
         /**set fullscreen*/
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -90,11 +63,6 @@ class MainActivity : AppCompatActivity() {
         //commitメソッドで追加したメソッドを反映する //
         transaction.commit()
 
-
-        //val returnButton: Button = findViewById<Button>(R.id.return_button)
-        // lambda式
-        // lambda式
-        //returnButton.setOnClickListener { v -> finish() }
 
     }
 
