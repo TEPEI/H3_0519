@@ -28,8 +28,8 @@ class View : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    lateinit var viewPager2:ViewPager2
-    lateinit var adapter:VideoAdapter
+    private val activeFragment: Fragment = VideoUpFragment()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,18 +45,22 @@ class View : Fragment() {
                 when (item.itemId) {
                     R.id.action_random -> {
                         //setFragment()
+                        changeFragment(View())
                         return@OnNavigationItemSelectedListener true
                     }
                     R.id.action_themeSep -> {
                         //setFragment()
+                        changeFragment(View())
                         return@OnNavigationItemSelectedListener true
                     }
                     R.id.action_themeUp -> {
                         //setFragment()
+                        //changeFragment(ThemeUpFragment())
                         return@OnNavigationItemSelectedListener true
                     }
                     R.id.action_videoUp -> {
                         //setFragment()
+                        changeFragment(VideoUpFragment())
                         return@OnNavigationItemSelectedListener true
                     }
                 }
@@ -66,6 +70,11 @@ class View : Fragment() {
 
 
 
+    }
+
+    fun changeFragment(fragment: Fragment) {
+        fragmentManager?.beginTransaction()?.hide(activeFragment)?.commit()
+        fragmentManager?.beginTransaction()?.show(fragment)?.commit()
     }
 
 
