@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
-                android:src="@drawable/ic_person_pin"
+                android:src="@drawable/ic_random"
                 android:layout_gravity="end"
                 android:padding="2dp"
                 android:layout_marginEnd="18dp"
@@ -86,7 +86,7 @@
                 android:layout_height="40dp"/>
             <ImageView
                 android:id="@+id/favorites"
-                android:src="@drawable/ic_favorite"
+                android:src="@drawable/ic_theme_sep"
                 android:layout_gravity="end"
                 android:padding="2dp"
                 android:layout_marginTop="5dp"
@@ -94,7 +94,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"/>
             <ImageView
-                android:src="@drawable/ic_share"
+                android:src="@drawable/ic_theme_up"
                 android:layout_gravity="end"
                 android:padding="6dp"
                 android:layout_marginTop="5dp"
@@ -102,7 +102,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"/>
             <ImageView
-                android:src="@drawable/ic_more"
+                android:src="@drawable/ic_video_up"
                 android:layout_gravity="end"
                 android:padding="2dp"
                 android:layout_marginTop="5dp"
