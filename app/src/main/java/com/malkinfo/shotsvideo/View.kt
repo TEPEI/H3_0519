@@ -28,7 +28,7 @@ class View : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    private val activeFragment: Fragment = VideoUpFragment()
+    private val activeFragment: Fragment = View()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

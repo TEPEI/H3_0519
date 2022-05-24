@@ -21,6 +21,7 @@
 
     </androidx.viewpager2.widget.ViewPager2>
 
+    <!--
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
         android:name="com.malkinfo.shotsvideo.View"
@@ -31,7 +32,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/vpager"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         adapter = VideoAdapter(options)
         viewPager2.adapter = adapter
 
-
+/*
         // Fragmentを追加した際に生成されたクラスを呼びだす //
         val mainfrag = View()
 
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         transaction.add(R.id.fragmentContainerView, mainfrag)
 
         //commitメソッドで追加したメソッドを反映する //
-        transaction.commit()
+        transaction.commit()*/
 
 
     }
