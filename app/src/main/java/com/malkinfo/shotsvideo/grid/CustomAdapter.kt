@@ -36,8 +36,7 @@ class CustomAdapter(private val animalList: List<Animal>): RecyclerView.Adapter<
         //CardViewにリスナーを設定
         holder.itemView.findViewById<CardView>(R.id.card_view).setOnClickListener {
             val position = holder.getAdapterPosition();
-            //val intent = Intent(application, VideoPreviewActivity::class.java)
-            //startActivity(intent)
+
 
         }
         return holder

@@ -1,18 +1,14 @@
 package com.malkinfo.shotsvideo
 
+import android.app.PendingIntent.getActivity
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.widget.AbsListView
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.malkinfo.shotsvideo.grid.CustomAdapter
 import com.malkinfo.shotsvideo.model.Animal
 
@@ -37,13 +33,27 @@ class VideoUpActivity : AppCompatActivity() {
 
         recycler_view.adapter = CustomAdapter(animalList)
         recycler_view.layoutManager = GridLayoutManager(this, 2, RecyclerView.VERTICAL, false)
-
+/*
         val previewButton: Button = findViewById<Button>(R.id.gallery)
         // lambda式
         previewButton.setOnClickListener { v: View? ->
             val intent = Intent(application, VideoPreviewActivity::class.java)
             startActivity(intent)
         }
+
+ */
+
+        recycler_view.addOnItemTouchListener(
+            RecyclerItemClickListener(
+                this,
+                object : RecyclerItemClickListener.OnItemClickListener {
+                    override fun onItemClick(view: View?, position: Int) {
+                        // ここで処理
+                        val intent = Intent(application, VideoPreviewActivity::class.java)
+                        startActivity(intent)
+                    }
+                })
+        )
 
         val randomPage: ImageView = findViewById<ImageView>(R.id.imageView3)
         val searchPage: ImageView = findViewById<ImageView>(R.id.imageView5)
