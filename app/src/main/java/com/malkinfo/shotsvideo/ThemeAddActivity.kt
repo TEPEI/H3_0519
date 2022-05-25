@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.CompoundButton
+import android.widget.Switch
+import android.widget.TextView
 
 class ThemeAddActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,25 +16,33 @@ class ThemeAddActivity : AppCompatActivity() {
 
         val sendButton = findViewById<Button>(R.id.buttonregistoration)
 
+        var textMessage = findViewById<TextView>(R.id.text_message)
+
+        var buttonReg = findViewById<Button>(R.id.buttonregistoration)
+
+
+        buttonReg.setOnClickListener{
+            textMessage.setText(R.string.text_message_complete)
+        }
+
         // lambda式
         sendButton.setOnClickListener { v: View? ->
             val intent = Intent(application, ThemeUpActivity::class.java)
             startActivity(intent)
 
 
-            mSwitch = (Switch)findViewById(R.id.switch);
 
             //mSwitchの状態が変化した際のリスナ
-            mSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if(mSwitch.isChecked()) {
-                        //mSwitch : Off -> On の時の処理
-                    } else {
-                        //mSwitch : On -> Off の時の処理
-                    }
-                }
-            });
+            var buttonReg = findViewById<Button>(R.id.button5)
+
+
+            buttonReg.setOnClickListener{
+                val transaction = supportFragmentManager.beginTransaction()
+                transaction.add(R.id.blankfragment, BlankFragment.createInstance())
+                transaction.addToBackStack(null)
+                transaction.commit()
+            }
+
         }
     }
 }
