@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ProgressBar
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -14,7 +13,7 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [UploagingFragment.newInstance] factory method to
+ * Use the [UploadingFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
 class UploadingFragment : Fragment() {
@@ -28,10 +27,6 @@ class UploadingFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-
-        //val view
-
-        //val progeress_bar: ProgressBar = findViewById<ProgressBar>(R.id.progressUploading)
     }
 
     override fun onCreateView(
@@ -49,7 +44,7 @@ class UploadingFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment UploagingFragment.
+         * @return A new instance of fragment UploadingFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
