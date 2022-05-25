@@ -17,6 +17,21 @@ class ThemeAddActivity : AppCompatActivity() {
         sendButton.setOnClickListener { v: View? ->
             val intent = Intent(application, ThemeUpActivity::class.java)
             startActivity(intent)
+
+
+            mSwitch = (Switch)findViewById(R.id.switch);
+
+            //mSwitchの状態が変化した際のリスナ
+            mSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    if(mSwitch.isChecked()) {
+                        //mSwitch : Off -> On の時の処理
+                    } else {
+                        //mSwitch : On -> Off の時の処理
+                    }
+                }
+            });
         }
     }
 }
