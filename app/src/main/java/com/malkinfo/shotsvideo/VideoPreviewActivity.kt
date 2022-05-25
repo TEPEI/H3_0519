@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
 class VideoPreviewActivity : AppCompatActivity() {
 
@@ -62,6 +65,9 @@ class VideoPreviewActivity : AppCompatActivity() {
         }
 
         val videoView: VideoView = findViewById(R.id.previewVideo)
+
+        val mydata = Firebase.database.getReference("video")
+
 
         videoView.setVideoURI(Uri.parse("https://firebasestorage.googleapis.com/v0/b/h3-kaihatsu.appspot.com/o/674639838.357586.mp4?alt=media&token=0a4afdba-9e05-49f8-b2f0-87f66f6b2fe4"))
 

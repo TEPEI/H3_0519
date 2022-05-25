@@ -22,9 +22,7 @@ class LoginActivity : AppCompatActivity() {
 
         val userName = findViewById<EditText>(R.id.editTextTextPersonName)
         val password = findViewById<EditText>(R.id.editTextTextPassword)
-        val manButton = findViewById<Button>(R.id.button)
-        val womanButton = findViewById<Button>(R.id.button2)
-        val otherButton = findViewById<Button>(R.id.button3)
+
         val sendButton = findViewById<Button>(R.id.registration)
 
 
@@ -33,7 +31,8 @@ class LoginActivity : AppCompatActivity() {
         // ArrayAdapter
 
         // ArrayAdapter
-        val adapter: ArrayAdapter<String> = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, spinnerItems)
+        val adapter: ArrayAdapter<String> =
+            ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, spinnerItems)
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
@@ -41,6 +40,7 @@ class LoginActivity : AppCompatActivity() {
 
         // spinner に adapter をセット
         spinner.setAdapter(adapter)
+
 
         // リスナーを登録
 
@@ -67,7 +67,6 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(application, MainActivity::class.java)
             startActivity(intent)
         }
-
 
     }
 }
