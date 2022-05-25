@@ -7,4 +7,5 @@
     <string name="new_name">John Sato</string>
     <string name="button">Button</string>
     <string name="description">camera picture</string>
+    <string name="input_keyword">キーワード入力</string>
 </resources>
