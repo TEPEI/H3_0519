@@ -45,6 +45,14 @@
         </activity>
 
         <activity
+            android:name=".ThemeUpActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ThemeAddActivity"
+            android:exported="true"/>
+
+        <activity
             android:name=".LoginActivity"
             android:exported="true" >
 
