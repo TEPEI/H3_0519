@@ -17,8 +17,8 @@ class ThemeUpActivity : AppCompatActivity() {
         val sendButton = findViewById<Button>(R.id.buttonmain)
 
         val data = listOf(
-            "Coca Cola", "ポカリスウェット", "ミネストローネ", "星の王子さま","南アルプスの天然水","ミンティア","ブラックニッカ",
-            "Jack Daniel","JMC", "アサヒスーパードライ", "CTC"
+            "Coca Cola", "ポカリスウェット", "星の王子さま","南アルプスの天然水","ミンティア","ブラックニッカ",
+            "Jack Daniel","JMC", "基本情報技術者試験","アサヒスーパードライ","ミネストローネ", "CTC"
         )
 
         // ListViewにデータをセットする
