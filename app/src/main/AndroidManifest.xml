@@ -26,6 +26,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShotsVideo">
         <activity
+            android:name=".UploadingActivity"
+            android:exported="false" />
+        <activity
             android:name=".UploadComplete"
             android:exported="false" />
         <activity
