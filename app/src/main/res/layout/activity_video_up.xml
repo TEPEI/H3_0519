@@ -12,24 +12,26 @@
         android:layout_width="106dp"
         android:layout_height="64dp"
         android:text="camera"
+        app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.872"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83" />
+        app:layout_constraintVertical_bias="0.88" />
 
     <Button
         android:id="@+id/gallery"
         android:layout_width="191dp"
         android:layout_height="59dp"
         android:text="Upload!!"
+        app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/camera"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.824" />
+        app:layout_constraintVertical_bias="0.88" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"

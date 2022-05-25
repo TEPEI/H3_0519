@@ -1,8 +1,11 @@
 package com.malkinfo.shotsvideo
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.view.WindowManager
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
@@ -62,6 +65,25 @@ class MainActivity : AppCompatActivity() {
 
         //commitメソッドで追加したメソッドを反映する //
         transaction.commit()*/
+
+        val randomPage: ImageView = findViewById<ImageView>(R.id.imageView3)
+        val searchPage: ImageView = findViewById<ImageView>(R.id.imageView5)
+        val uploadPage: ImageView = findViewById<ImageView>(R.id.imageView6)
+
+        randomPage.setOnClickListener { v: View? ->
+            val intent = Intent(application, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        searchPage.setOnClickListener { v: View? ->
+            val intent = Intent(application, ThemeUpActivity::class.java)
+            startActivity(intent)
+        }
+
+        uploadPage.setOnClickListener { v: View? ->
+            val intent = Intent(application, VideoUpActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }
