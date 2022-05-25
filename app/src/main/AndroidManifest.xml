@@ -27,7 +27,7 @@
         android:theme="@style/Theme.ShotsVideo">
         <activity
             android:name=".UploadingActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".UploadComplete"
             android:exported="false" />
