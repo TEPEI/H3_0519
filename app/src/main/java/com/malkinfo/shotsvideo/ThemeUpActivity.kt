@@ -54,8 +54,10 @@ class ThemeUpActivity : AppCompatActivity() {
         )
         // OnItemClickListenerを実装
         list.setOnItemClickListener { parent, view, position, id ->
-            Toast.makeText(this, data[position], Toast.LENGTH_SHORT).show()
+            val intent = Intent(application, MainActivity::class.java)
+            startActivity(intent)
         }
+
         // lambda式
         sendButton.setOnClickListener { v: View? ->
             val intent = Intent(application, ThemeAddActivity::class.java)
