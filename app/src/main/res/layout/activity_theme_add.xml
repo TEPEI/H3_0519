@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ThemeUpFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".ThemeAddActivity">
 
 
     <Button
@@ -28,10 +26,11 @@
         android:layout_height="75dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="334dp"
-        android:layout_marginTop="14dp"
         android:text="×"
-        android:textSize="34sp" />
+        android:textSize="34sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -39,11 +38,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="127dp"
-        android:layout_marginBottom="571dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="New Theme" />
+        android:text="New Theme"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="94dp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -51,18 +51,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="572dp"
         android:text="＃"
-        android:textSize="34sp" />
+        android:textSize="34sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="94dp" />
 
-    <Switch
-        android:id="@+id/aaa"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="572dp"
-        android:text="有料テーマ" />
-</RelativeLayout>
+    <!--   <Switch
+           android:id="@+id/aaa"
+           android:layout_width="wrap_content"
+           android:layout_height="44dp"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentBottom="true"
+           android:layout_marginEnd="8dp"
+           android:layout_marginBottom="572dp"
+           android:text="有料テーマ" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

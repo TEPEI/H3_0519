@@ -1,8 +1,10 @@
 package com.malkinfo.shotsvideo
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle;
+import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
@@ -14,13 +16,7 @@ class ThemeUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_theme_up)
 
-        val button = findViewById<Button>(R.id.buttonmain)
-        button.setOnClickListener {
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.add(R.layout.fragment_theme_up, ThemeUpFragment.createInstance())
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }
+        val sendButton = findViewById<Button>(R.id.buttonmain)
 
         val data = listOf(
             "あだち", "いのうえ", "うえき", "うえだ",
@@ -55,6 +51,13 @@ class ThemeUpActivity : AppCompatActivity() {
                 }
             }
         )
+
+
+        // lambda式
+        sendButton.setOnClickListener { v: View? ->
+            val intent = Intent(application, ThemeAddActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
