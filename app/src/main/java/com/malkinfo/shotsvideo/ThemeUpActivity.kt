@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
+import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 
 class ThemeUpActivity : AppCompatActivity() {
@@ -19,8 +20,8 @@ class ThemeUpActivity : AppCompatActivity() {
         val sendButton = findViewById<Button>(R.id.buttonmain)
 
         val data = listOf(
-            "あだち", "いのうえ", "うえき", "うえだ",
-            "うえと", "うちだ", "うちの", "うつみ", "うの", "えとう", "おおた"
+            "コカ・コーラ", "ポカリスウェット", "ミネストローネ", "CTC",
+            "JMC", "アサヒスーパードライ"
         )
 
         // ListViewにデータをセットする
@@ -51,8 +52,10 @@ class ThemeUpActivity : AppCompatActivity() {
                 }
             }
         )
-
-
+        // OnItemClickListenerを実装
+        list.setOnItemClickListener { parent, view, position, id ->
+            Toast.makeText(this, data[position], Toast.LENGTH_SHORT).show()
+        }
         // lambda式
         sendButton.setOnClickListener { v: View? ->
             val intent = Intent(application, ThemeAddActivity::class.java)
