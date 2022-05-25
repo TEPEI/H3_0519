@@ -21,12 +21,12 @@ class VideoUpActivity : AppCompatActivity() {
         setContentView(R.layout.activity_video_up)
 
         val animalList = listOf<Animal>(
-            Animal(R.drawable.one, "ネコ"),
-            Animal(R.drawable.two, "イヌ"),
-            Animal(R.drawable.three, "ゴリラ"),
-            Animal(R.drawable.four, "ウマ"),
-            Animal(R.drawable.five,"キノコ"),
-            Animal(R.drawable.six,"アドギャヴォ")
+            Animal(R.drawable.one, ""),
+            Animal(R.drawable.two, ""),
+            Animal(R.drawable.three, ""),
+            Animal(R.drawable.four, ""),
+            Animal(R.drawable.five,""),
+            Animal(R.drawable.six,"")
         )
 
         val recycler_view: RecyclerView = findViewById(R.id.recycler_view)
