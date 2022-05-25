@@ -14,11 +14,12 @@
         android:layout_height="70dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="122dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="488dp"
-        android:layout_marginEnd="124dp"
+        android:layout_marginEnd="100dp"
         android:text="Registration"
         app:backgroundTint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +40,7 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="45dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
@@ -56,23 +57,33 @@
         android:layout_height="45dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="80dp"
         android:text="＃"
         android:textSize="34sp"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <!--   <Switch
-           android:id="@+id/aaa"
-           android:layout_width="wrap_content"
-           android:layout_height="44dp"
-           android:layout_alignParentEnd="true"
-           android:layout_alignParentBottom="true"
-           android:layout_marginEnd="8dp"
-           android:layout_marginBottom="572dp"
-           android:text="有料テーマ" />-->
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:text="有料テーマ"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.malkinfo.shotsvideo.BlankFragment"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

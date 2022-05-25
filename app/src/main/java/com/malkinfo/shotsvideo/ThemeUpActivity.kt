@@ -5,10 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle;
 import android.view.View
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.ListView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.widget.SearchView
 
 class ThemeUpActivity : AppCompatActivity() {
@@ -63,6 +60,27 @@ class ThemeUpActivity : AppCompatActivity() {
             val intent = Intent(application, ThemeAddActivity::class.java)
             startActivity(intent)
         }
+
+
+        val randomPage: ImageView = findViewById<ImageView>(R.id.imageView3)
+        val searchPage: ImageView = findViewById<ImageView>(R.id.imageView5)
+        val uploadPage: ImageView = findViewById<ImageView>(R.id.imageView6)
+
+        randomPage.setOnClickListener { v: View? ->
+            val intent = Intent(application, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        searchPage.setOnClickListener { v: View? ->
+            val intent = Intent(application, ThemeUpActivity::class.java)
+            startActivity(intent)
+        }
+
+        uploadPage.setOnClickListener { v: View? ->
+            val intent = Intent(application, VideoUpActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }
