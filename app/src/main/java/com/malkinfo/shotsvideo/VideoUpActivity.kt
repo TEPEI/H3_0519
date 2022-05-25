@@ -44,7 +44,27 @@ class VideoUpActivity : AppCompatActivity() {
             val intent = Intent(application, VideoPreviewActivity::class.java)
             startActivity(intent)
         }
-/*
+
+        val randomPage: ImageView = findViewById<ImageView>(R.id.imageView3)
+        val searchPage: ImageView = findViewById<ImageView>(R.id.imageView5)
+        val uploadPage: ImageView = findViewById<ImageView>(R.id.imageView6)
+
+        randomPage.setOnClickListener { v: View? ->
+            val intent = Intent(application, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        searchPage.setOnClickListener { v: View? ->
+            val intent = Intent(application, ThemeUpActivity::class.java)
+            startActivity(intent)
+        }
+
+        uploadPage.setOnClickListener { v: View? ->
+            val intent = Intent(application, VideoUpActivity::class.java)
+            startActivity(intent)
+        }
+
+    /*
         val cardview: CardView = findViewById<CardView>(R.id.card_view)
 
         cardview.setOnClickListener { v: View? ->
