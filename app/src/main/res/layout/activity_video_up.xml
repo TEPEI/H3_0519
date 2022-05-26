@@ -23,8 +23,8 @@
 -->
     <Button
         android:id="@+id/camera"
-        android:layout_width="149dp"
-        android:layout_height="80dp"
+        android:layout_width="128dp"
+        android:layout_height="53dp"
         android:text="camera"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"

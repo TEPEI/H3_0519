@@ -26,7 +26,8 @@ class VideoUpActivity : AppCompatActivity() {
             Animal(R.drawable.three, ""),
             Animal(R.drawable.four, ""),
             Animal(R.drawable.five,""),
-            Animal(R.drawable.six,"")
+            Animal(R.drawable.six,""),
+            Animal(R.drawable.minestrone,"")
         )
 
         val recycler_view: RecyclerView = findViewById(R.id.recycler_view)

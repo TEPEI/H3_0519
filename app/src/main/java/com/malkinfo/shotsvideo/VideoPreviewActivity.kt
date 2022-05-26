@@ -12,7 +12,8 @@ import com.google.firebase.ktx.Firebase
 
 class VideoPreviewActivity : AppCompatActivity() {
 
-    private val spinnerItems = arrayOf("","CocaCola","ミネストローネ","FE参考書")
+    private val spinnerItems = arrayOf("","コカ・コーラ", "ポカリスウェット", "ミネストローネ", "CTC",
+        "JMC", "アサヒスーパードライ")
 
 
 
@@ -69,7 +70,7 @@ class VideoPreviewActivity : AppCompatActivity() {
         val mydata = Firebase.database.getReference("video")
 
 
-        videoView.setVideoURI(Uri.parse("https://firebasestorage.googleapis.com/v0/b/h3-kaihatsu.appspot.com/o/674639838.357586.mp4?alt=media&token=0a4afdba-9e05-49f8-b2f0-87f66f6b2fe4"))
+        videoView.setVideoURI(Uri.parse("https://firebasestorage.googleapis.com/v0/b/h3-kaihatsu.appspot.com/o/Cm%202.MP4?alt=media&token=8f5b0b49-dc58-49b0-851d-561459808758"))
 
         videoView.start()
 
