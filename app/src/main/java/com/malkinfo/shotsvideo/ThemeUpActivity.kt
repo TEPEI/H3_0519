@@ -18,7 +18,7 @@ class ThemeUpActivity : AppCompatActivity() {
 
         val data = listOf(
             "コカ・コーラ", "ポカリスウェット", "ミンティア",
-            "JMC", "アサヒスーパードライ","ミネストローネ", "CTC"     )
+            "JMC", "アサヒスーパードライ","ミネストローネ", "CTC-G"     )
 
         // ListViewにデータをセットする
         val list = findViewById<ListView>(R.id.List)
